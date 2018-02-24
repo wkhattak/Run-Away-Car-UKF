@@ -95,7 +95,7 @@ The pertinent lines of code in `main.cpp` are as follows:
 
 ```
 
-Here's a [video clip](/video/Run away car - UKF_1.mp4) of how it looks in the simulator.
+Here's a [video clip](https://github.com/wkhattak/Run-Away-Car-UKF/blob/master/video/Run%20away%20car%20-%20UKF_1.mp4) of how it looks in the simulator.
 
 ## Directory Structure
 
