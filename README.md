@@ -7,7 +7,7 @@ This project is about utilizing a [Unscented Kalman Filter](https://en.wikipedia
 ## Project Introduction
 
 In this project, not only do we implement an UKF, but also use it to catch an escaped car driving in a circular path. 
-The run away car is sensed by a stationary sensor, that is able to measure both noisy LiDAR and Radar data. The capture vehicle will need to use these measurements to close in on the run away car. To capture the run away car the capture vehicle needs to come within .1 unit distance of its position. However the capture car and the run away car have the same max velocity, so if the capture vehicle wants to catch the car, it will need to predict where the car will be ahead of time.
+The runaway car is sensed by a stationary sensor, that is able to measure both noisy LiDAR and Radar data. The capture vehicle will need to use these measurements to close in on the runaway car. To capture the runaway car the capture vehicle needs to come within `0.1` unit distance of its position. However the capture car and the runaway car have the same max velocity, so if the capture vehicle wants to catch the car, it will need to predict where the car will be ahead of time.
 
 ## How Does It Work?
 
@@ -24,7 +24,7 @@ The pertinent lines of code in `main.cpp` are as follows:
 
 ```c++
 
-// get calculated x,y based on current timestamp
+          // get calculated x,y based on current timestamp
           target_x = ukf.x_[0];
           target_y = ukf.x_[1]; 
           // find distance to target based on current timestamp
