@@ -1,11 +1,8 @@
-# Run Away Robot with Unscented Kalman Filter Bonus Challenge Starter Code
-Self-Driving Car Engineer Nanodegree Program
+# Project: Run Away Car with Unscented Kalman Filter
+## Overview  
 
----
+This project is about utilizing a [Unscented Kalman Filter](https://en.wikipedia.org/wiki/Kalman_filter#Unscented_Kalman_filter) to estimate the position of a runaway car with noisy LiDAR and Radar measurements & then using these estimates to move the chase car towards the runaway car. 
 
-### Overview
-
-This repository contains all the code needed to complete the Bonus Challenge: Catch the Run Away Car with Unscented Kalman Filter.
 
 ### Project Introduction
 
