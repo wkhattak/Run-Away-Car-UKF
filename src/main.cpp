@@ -97,7 +97,7 @@ int main()
           iss_R >> timestamp_R;
           meas_package_R.timestamp_ = timestamp_R;
 
-          // get calcualted x,y based on current timestamp
+          // get calculated x,y based on current timestamp
           target_x = ukf.x_[0];
           target_y = ukf.x_[1]; 
           // find distance to target based on current timestamp
@@ -106,7 +106,7 @@ int main()
           double heading_difference = 0.0;
           // predict 0.45 seconds ahead if distance to target is greater than 0.7 units
           if (distance_difference > 0.7) {
-            // save curent matrices based on current timestamp
+            // save current matrices based on current timestamp
             // the x_ matrix contains x,y positions of the target based on current timestamp
             VectorXd current_x_ = ukf.x_;
             MatrixXd current_P_ = ukf.P_;    
@@ -136,7 +136,7 @@ int main()
             while (heading_difference <-M_PI) heading_difference+=2.*M_PI;
           }
           else { // predict only 0.3 seconds ahead to smooth the chase car's movement & to make sure it doesn't stay ahead of the target
-            // save curent matrices based on current timestamp
+            // save current matrices based on current timestamp
             // the x_ matrix contains x,y positions of the target based on current timestamp
             VectorXd current_x_ = ukf.x_;
             MatrixXd current_P_ = ukf.P_;    
