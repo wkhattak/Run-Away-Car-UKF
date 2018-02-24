@@ -22,8 +22,7 @@ As described above, the *Predict* step pf the UKF only makes use of the previous
 
 The pertinent lines of code in `main.cpp` are as follows:
 
-```
-c++
+```c++
 
 // get calculated x,y based on current timestamp
           target_x = ukf.x_[0];
@@ -93,6 +92,7 @@ c++
             while (heading_difference > M_PI) heading_difference-=2.*M_PI; 
             while (heading_difference <-M_PI) heading_difference+=2.*M_PI;
           }
+
 ```
 
 ## Directory Structure
